@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/drawable-v24/shape_button_rounded.xml" value="0.221" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/drawable/border_button.xml" value="0.1265" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/drawable/category_button.xml" value="0.2135" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/drawable/category_dialog.xml" value="0.2135" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/drawable/edit_transaction_dialog.xml" value="0.1265" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.221" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.2135" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2135" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/drawable/ic_edit_white_24dp.xml" value="0.2135" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1265" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/drawable/rounded_edittext.xml" value="0.1" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/drawable/rounded_frame.xml" value="0.1" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/drawable/textview_border.xml" value="0.2135" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout-v31/dialog_add_transaction.xml" value="0.358695652173913" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout-v31/item_label_color.xml" value="0.358695652173913" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/activity_goal.xml" value="0.1" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/activity_transactions.xml" value="0.358695652173913" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/add_goal_dialog.xml" value="0.358695652173913" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/category_detail_item.xml" value="0.358695652173913" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/category_dialog.xml" value="0.358695652173913" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/deposit_money_dialog.xml" value="0.358695652173913" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/dialog_add_transaction.xml" value="0.358695652173913" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/edit_transaction_dialog.xml" value="0.33" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/fragment_add_transaction.xml" value="0.25" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/fragment_goals.xml" value="0.358695652173913" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/fragment_history.xml" value="0.358695652173913" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/fragment_home.xml" value="0.358695652173913" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/fragment_statistics.xml" value="0.358695652173913" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/fragment_transactions.xml" value="0.358695652173913" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/goal_item.xml" value="0.358695652173913" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/item_label_color.xml" value="0.18802083333333333" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/main_content.xml" value="0.358695652173913" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/main_screen.xml" value="0.358695652173913" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/layout/transaction_item.xml" value="0.358695652173913" />
+        <entry key="..\:/Android/MoneyOrganizer/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2790328973444312" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

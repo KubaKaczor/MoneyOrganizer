@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_history"
+        android:title="Historia"
+        android:icon="@drawable/ic_baseline_history_24"/>
+    <item
+        android:id="@+id/menu_add"
+        android:title="Dodaj"
+        android:icon="@drawable/ic_baseline_add_24"/>
+    <item
+        android:id="@+id/menu_home"
+        android:title="Dom"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item
+        android:id="@+id/menu_goal"
+        android:title="Cele"
+        android:icon="@drawable/goal"/>
+    <item
+        android:id="@+id/menu_statistics"
+        android:title="Statystyki"
+        android:icon="@drawable/ic_baseline_query_stats_24"/>
+
+</menu>

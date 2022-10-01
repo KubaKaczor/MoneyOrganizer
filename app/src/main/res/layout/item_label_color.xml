@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO (Step 1: Design an item for label color.)-->
+<!--START-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground">
+
+    <View
+        android:id="@+id/view_main"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="4dp"
+        android:background="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/viewCategoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kategoria"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/iv_selected_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_check_24"
+        android:visibility="gone"
+        tools:visibility="visible" />
+</FrameLayout><!--END-->

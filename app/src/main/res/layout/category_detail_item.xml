@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="@color/autoColor"
+        app:strokeWidth="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <View
+                android:id="@+id/viewCategory"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:background="@color/autoColor"
+                app:layout_constraintEnd_toStartOf="@id/tvCategoryLabel"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCategoryLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Samochód - "
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/viewCategory"
+                app:layout_constraintStart_toEndOf="@id/viewCategory"
+                app:layout_constraintTop_toTopOf="@id/viewCategory" />
+
+            <TextView
+                android:id="@+id/tvCategoryLabelPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="0%"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/tvCategoryLabel"
+                app:layout_constraintTop_toTopOf="@id/tvCategoryLabel" />
+
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:src="@drawable/ic_baseline_add_24"
+                app:layout_constraintBottom_toBottomOf="@id/viewCategory"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvCategoryLabel"
+                app:tint="@color/autoColor" />
+
+            <View
+                android:id="@+id/categoryDivider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/autoColor"
+                app:layout_constraintTop_toBottomOf="@id/viewCategory" />
+
+            <TextView
+                android:id="@+id/tvCategoryMoneyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Wydane pieniądze: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/viewCategory"
+                app:layout_constraintTop_toBottomOf="@id/categoryDivider" />
+
+            <TextView
+                android:id="@+id/tvCategoryMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="400zł"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/tvCategoryMoneyLabel"
+                app:layout_constraintTop_toTopOf="@id/tvCategoryMoneyLabel" />
+
+            <TextView
+                android:id="@+id/tvCategoryTransactionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Transakcje: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/viewCategory"
+                app:layout_constraintTop_toBottomOf="@id/tvCategoryMoneyLabel" />
+
+            <TextView
+                android:id="@+id/tvCategoryTransaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="6"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/tvCategoryTransactionLabel"
+                app:layout_constraintTop_toTopOf="@id/tvCategoryTransactionLabel" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnShowTransaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/autoColor"
+                android:elevation="5dp"
+                android:text="Obejrzyj transakcje"
+                android:textColor="@color/white"
+                app:cornerRadius="10dp"
+                app:layout_constraintTop_toBottomOf="@id/tvCategoryTransactionLabel"
+
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

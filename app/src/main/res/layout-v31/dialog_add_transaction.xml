@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:minWidth="350dp"
+    android:minHeight="200dp"
+    android:background="@drawable/rounded_frame"
+    android:clipToOutline="true"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:background="@color/light_grey"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kwota:"
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:inputType="numberDecimal"
+                android:layout_marginTop="4dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/rounded_edittext"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="zł"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:paddingStart="8dp"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opis:"
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+            <EditText
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="rower"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:inputType="textMultiLine"
+                android:gravity="start|top"
+                android:textSize="22sp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:background="@drawable/rounded_edittext"/>
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnQuickTransactionCancel"
+                    android:background="@drawable/shape_button_rounded"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Anuluj"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/btnQuickTransactionAdd"
+                    android:background="@drawable/shape_button_rounded"
+                    android:layout_width="0dp"
+                    android:text="Dodaj"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
