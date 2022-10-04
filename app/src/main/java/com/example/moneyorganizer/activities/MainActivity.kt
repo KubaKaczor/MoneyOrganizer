@@ -24,8 +24,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //addCategories()
-
         val homeFragment = HomeFragment()
         supportFragmentManager.beginTransaction().replace(R.id.fragment_container, homeFragment).commit()
 
@@ -63,21 +61,5 @@ class MainActivity : AppCompatActivity() {
         transaction.replace(R.id.fragment_container,fragment)
         transaction.addToBackStack(null)
         transaction.commit()
-    }
-
-    private fun addCategories(){
-        val categoryDao = (application as MoneyOrganizerApp).db.categoryDao()
-
-        val carCategory = CategoryEntity(name = "Samochód", color = "#FF0000")
-        val houseCategory = CategoryEntity(name = "Mieszkanie", color = "#FFA500")
-        val mediaCategory = CategoryEntity(name = "Media", color = "#0000FF")
-        val foodCategory = CategoryEntity(name = "Jedzenie", color = "#008000")
-        val shoppingCategory = CategoryEntity(name = "Zakupy", color = "#A0522D")
-        val funCategory = CategoryEntity(name = "Rozrywka", color = "#8e4585")
-        val whimsCategory = CategoryEntity(name = "Zachcianki", color = "#FF69B4")
-
-        lifecycleScope.launch {
-            categoryDao.insert(carCategory, houseCategory, mediaCategory, foodCategory, shoppingCategory, funCategory, whimsCategory)
-        }
     }
 }
