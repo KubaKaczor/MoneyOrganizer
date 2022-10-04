@@ -26,7 +26,7 @@ interface TransactionDao {
     @Query("SELECT c.id as id, c.name as name, c.color as color, c.transactionsNumber as transactionsNumber, c.transactionsValue as transactionsValue, c.percentage as percentage,t.transactionId as t_transactionId, t.description as t_description, t.value as t_value, t.categoryId as t_categoryId, t.date as t_date FROM transactions t inner join categories c on (t.categoryId = c.id) where t.date BETWEEN :startMonth AND :endMonth order by t.date")
     fun fetchAllTransactionsByMonth(startMonth: Long, endMonth: Long): Flow<List<TransactionsAndCategories>>
 
-    @Query("SELECT SUM(value) FROM transactions")
+    @Query("SELECT Case WHEN SUM(value) > 0 THEN SUM(value) else 0 end as suma FROM transactions")
     fun getOverallValue(): Flow<Float>
 
     @Query("SELECT Count(*) FROM transactions")

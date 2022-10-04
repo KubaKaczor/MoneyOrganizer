@@ -78,108 +78,111 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cvChart">
+        app:layout_constraintTop_toBottomOf="@id/cvChart"
+        app:layout_constraintBottom_toTopOf="@+id/cvTheMostValueTran">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cvAvg"
-        android:layout_width="0dp"
-        android:layout_height="105dp"
-        android:layout_weight="1"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="4dp"
-        android:elevation="10dp"
-        app:cardCornerRadius="10dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvAvg"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="8dp">
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Średnia miesiecznych wydatków:"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:gravity="center"/>
+                android:orientation="vertical"
+                android:padding="8dp">
 
-            <TextView
-                android:id="@+id/avgValue"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Średnia miesiecznych wydatków:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:id="@+id/avgValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="2700 zł"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvTopCategories"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2700 zł"
-                android:textColor="@color/black"
-                android:textSize="28sp"
-                android:textStyle="bold"
-                android:gravity="center"/>
+                android:orientation="vertical"
+                android:padding="8dp">
 
-        </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Najdroższe kategorie:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
 
-    </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/stCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="start"
+                    android:text="1. Samochód"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"/>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cvTopCategories"
-        android:layout_width="0dp"
-        android:layout_height="105dp"
-        android:layout_weight="1"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        android:elevation="10dp"
-        app:cardCornerRadius="10dp"
-        >
+                <TextView
+                    android:id="@+id/ndCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="start"
+                    android:text="2. Mieszkanie"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
+                <TextView
+                    android:id="@+id/rdCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="start"
+                    android:text="3. Rozrywka"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="8dp">
+            </LinearLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Najdroższe kategorie:"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:gravity="center"/>
-
-            <TextView
-                android:id="@+id/stCategory"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="1. Samochód"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:gravity="start"/>
-
-            <TextView
-                android:id="@+id/ndCategory"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="2. Mieszkanie"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:gravity="start"/>
-
-            <TextView
-                android:id="@+id/rdCategory"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="3. Rozrywka"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:gravity="start"/>
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 

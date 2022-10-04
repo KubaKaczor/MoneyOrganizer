@@ -110,7 +110,10 @@ class StatisticsFragment : Fragment() {
         lifecycleScope.launch {
 
             transactionDao.getOverallValue().collect{
-                binding.overallValue.text = "$it zł"
+                if(it != null)
+                    binding.overallValue.text = "$it zł"
+                else
+                    binding.overallValue.text = "0 zł"
             }
         }
     }
@@ -134,7 +137,12 @@ class StatisticsFragment : Fragment() {
         lifecycleScope.launch {
 
             transactionDao.getTheMostExpensiveTransaction().collect{
-                binding.highestTransaction.text = "${it.keys.first()} - ${it.values.first()} zł"
+                if(it.keys.first() != null || it.values.first() != null)
+                    binding.highestTransaction.text = "${it.keys.first()} - ${it.values.first()} zł"
+                else
+                    binding.highestTransaction.text = "0 zł"
+
+
             }
         }
     }
@@ -148,13 +156,27 @@ class StatisticsFragment : Fragment() {
             transactionDao.getTopCategories().collect{
                 val list = it
 
-                val firstCat = list[0]
-                val secondCat = list[1]
-                val thirdCat = list[2]
+                if(list.isNotEmpty()) {
+                    val firstCat = list[0]
+                    val secondCat = list[1]
+                    val thirdCat = list[2]
 
-                binding.stCategory.text = "1. ${firstCat.categoryName} - ${firstCat.categoryOverall} zł"
-                binding.ndCategory.text = "1. ${secondCat.categoryName} - ${secondCat.categoryOverall} zł"
-                binding.rdCategory.text = "1. ${thirdCat.categoryName} - ${thirdCat.categoryOverall} zł"
+                    binding.stCategory.text =
+                        "1. ${firstCat.categoryName} - ${firstCat.categoryOverall} zł"
+                    binding.ndCategory.text =
+                        "2. ${secondCat.categoryName} - ${secondCat.categoryOverall} zł"
+                    binding.rdCategory.text =
+                        "3. ${thirdCat.categoryName} - ${thirdCat.categoryOverall} zł"
+                }
+                else{
+                    binding.stCategory.text =
+                        "1. Brak"
+                    binding.ndCategory.text =
+                        "2. Brak"
+                    binding.rdCategory.text =
+                        "3. Brak"
+                }
+
             }
         }
     }
